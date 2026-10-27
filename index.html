@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bước Ngoặt - Ngân Đỗ | Dám khác biệt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Lora', serif; background-color: #FDFBF7; color: #4A3F35; }
+        h1, h2, h3, h4, .playfair { font-family: 'Playfair Display', serif; }
+        .bg-terracotta { background-color: #D36B46; }
+        .text-terracotta { color: #D36B46; }
+        .border-terracotta { border-color: #D36B46; }
+        .hover-terracotta:hover { background-color: #B55835; }
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(74, 63, 53, 0.7), rgba(74, 63, 53, 0.7)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+        .floating-contact { position: fixed; bottom: 20px; left: 20px; z-index: 50; display: flex; flex-direction: column; gap: 15px; }
+        .floating-share { position: fixed; top: 50%; right: 20px; transform: translateY(-50%); z-index: 50; display: flex; flex-direction: column; gap: 15px; }
+        .float-btn { width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.3s; font-size: 24px; }
+        .float-btn:hover { transform: scale(1.1); color: white; }
+        .btn-zalo { background-color: #0068FF; }
+        .btn-phone { background-color: #4CAF50; }
+        .btn-fb { background-color: #1877F2; }
+        .btn-link { background-color: #6B7280; }
+    </style>
+</head>
+<body class="antialiased selection:bg-terracotta selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl playfair font-bold text-terracotta">Ngân Đỗ.</div>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold tracking-wider">
+                <a href="#truoc-buoc-ngoat" class="hover:text-terracotta transition">Câu Chuyện</a>
+                <a href="#nhat-ky" class="hover:text-terracotta transition">Nhật Ký</a>
+                <a href="#luu-but" class="hover:text-terracotta transition">Lưu Bút</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white px-4 relative pt-16">
+        <span class="uppercase tracking-[0.3em] text-sm md:text-base mb-4 text-orange-200">Dám khác biệt</span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl leading-tight">BƯỚC NGOẶT <br/><span class="text-3xl md:text-5xl font-normal italic">Hành trình Tự đổi mới & Bứt phá</span></h1>
+        <p class="text-lg md:text-xl max-w-2xl mb-10 font-light text-gray-200 italic">"Giữa những rào cản của lối mòn, tôi chọn thấu hiểu chính mình để kiến tạo nên những giá trị mới."</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#truoc-buoc-ngoat" class="bg-terracotta hover-terracotta text-white px-8 py-3 rounded-full uppercase tracking-wider font-semibold transition shadow-lg">Khám phá câu chuyện</a>
+            <a href="#luu-but" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full uppercase tracking-wider font-semibold transition">Gửi lời nhắn</a>
+        </div>
+    </section>
+
+    <!-- Phần 1: Trước Bước Ngoặt -->
+    <section id="truoc-buoc-ngoat" class="py-20 md:py-32 px-4 max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="md:w-1/2">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vùng an toàn" class="rounded-2xl shadow-xl w-full object-cover h-[500px]">
+        </div>
+        <div class="md:w-1/2">
+            <span class="text-terracotta font-semibold tracking-widest uppercase text-sm">Chương 1</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-800">Trước Bước Ngoặt</h2>
+            <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                Có những giai đoạn chúng ta chìm trong những lối mòn an toàn. Trăn trở về việc phát triển kinh doanh nhưng lại thiếu đi sự thấu hiểu sâu sắc về con người và chính bản thân mình.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Đó là những rào cản vô hình, những nỗi sợ phải "khác biệt", sợ phải thay đổi cách làm đã cũ. Vùng an toàn luôn êm ái, nhưng nó không bao giờ có chỗ cho sự vĩ đại.
+            </p>
+        </div>
+    </section>
+
+    <!-- Phần 2: Khoảnh Khắc Thức Tỉnh -->
+    <section class="py-20 md:py-32 px-4 bg-[#F5F2EB]">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-terracotta font-semibold tracking-widest uppercase text-sm">Chương 2</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-8 text-gray-800">Khoảnh Khắc Thức Tỉnh</h2>
+            <p class="text-xl md:text-2xl text-gray-700 italic leading-relaxed mb-12">
+                "Sự thay đổi lớn lao nhất không đến từ bên ngoài, mà bắt đầu từ khoảnh khắc ta dám đối diện và thấu hiểu chính mình."
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-lightbulb text-4xl text-terracotta mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Dám Khác Biệt</h3>
+                    <p class="text-gray-600">Lựa chọn bước ra khỏi quy chuẩn thông thường, dũng cảm theo đuổi con đường riêng đầy thử thách nhưng mang đậm dấu ấn cá nhân.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-users text-4xl text-terracotta mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Thấu Hiểu Con Người</h3>
+                    <p class="text-gray-600">Nhận ra cốt lõi của kinh doanh bền vững không chỉ là những con số, mà là trái tim và sự thấu cảm giữa người với người.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-rocket text-4xl text-terracotta mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Tích Hợp AI</h3>
+                    <p class="text-gray-600">Áp dụng công nghệ vào quy trình làm việc, biến kiến thức thành hệ thống để giải phóng sức lao động, nâng tầm tư duy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần 3: Bứt Phá & Trái Ngọt -->
+    <section class="py-20 md:py-32 px-4 max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trái ngọt" class="rounded-2xl shadow-xl w-full object-cover h-[500px]">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-terracotta font-semibold tracking-widest uppercase text-sm">Chương 3</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-800">Bứt Phá & Trái Ngọt</h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-terracotta text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">Quy trình chuẩn hoá</h4>
+                            <p class="text-gray-600 mt-1">Chuyển hóa kinh nghiệm quản trị và phát triển nội dung thành hệ thống tự động, bài bản.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-terracotta text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">Cộng đồng bền vững</h4>
+                            <p class="text-gray-600 mt-1">Xây dựng được một cộng đồng dựa trên nền tảng thấu hiểu và chia sẻ giá trị thực.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-terracotta text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">Trao quyền & Truyền cảm hứng</h4>
+                            <p class="text-gray-600 mt-1">Giúp đỡ nhiều đối tác, khách hàng vượt qua vùng an toàn của chính họ để tìm thấy "bước ngoặt" cuộc đời.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần 4: Nhật Ký Bước Ngoặt -->
+    <section id="nhat-ky" class="py-20 md:py-32 px-4 bg-white border-y border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nhật Ký Bước Ngoặt</h2>
+                <p class="text-gray-600">Ghi chép lại những chiêm nghiệm nhỏ bé nhưng tạo ra sự thay đổi lớn mỗi ngày.</p>
+            </div>
+            
+            <div class="border-l-2 border-terracotta/30 pl-8 relative space-y-12 ml-4 md:ml-0">
+                <!-- Bài viết 1 -->
+                <div class="relative">
+                    <div class="absolute w-4 h-4 bg-terracotta rounded-full -left-[41px] top-1 border-4 border-white shadow"></div>
+                    <span class="text-sm text-gray-500 font-semibold uppercase tracking-wider">Tuần này</span>
+                    <h3 class="text-2xl font-bold mt-1 mb-3 text-gray-800">Sự Thấu Cảm Trong Kỷ Nguyên AI</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Càng làm việc nhiều với hệ thống tự động hoá và AI, tôi càng nhận ra: Máy móc giúp ta nhanh hơn, nhưng chính sự thấu cảm con người mới giữ chân ta lại với nhau. Bước ngoặt tuần này của tôi là quyết định đưa thêm yếu tố "cảm xúc" vào một quy trình vốn dĩ khô khan. Mọi thứ thay đổi hoàn toàn.
+                    </p>
+                    <p class="font-bold text-terracotta italic">Còn bạn, bước ngoặt lớn nhất tuần này của bạn là gì? Hãy để lại bình luận phía dưới nhé!</p>
+                </div>
+                
+                <!-- Bài viết 2 -->
+                <div class="relative">
+                    <div class="absolute w-4 h-4 bg-gray-300 rounded-full -left-[41px] top-1 border-4 border-white shadow"></div>
+                    <span class="text-sm text-gray-500 font-semibold uppercase tracking-wider">Tuần trước</span>
+                    <h3 class="text-2xl font-bold mt-1 mb-3 text-gray-800">Sức mạnh của việc "Dừng lại"</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Đôi khi, chạy chậm lại chính là cách tốt nhất để bứt phá. Khi mạnh dạn từ chối những dự án không phù hợp với giá trị cốt lõi, tôi tìm thấy không gian cho những điều thực sự quan trọng.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Cộng Đồng -->
+    <section class="py-16 bg-terracotta text-white text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Cộng đồng "Dám Khác Biệt"</h2>
+            <p class="text-lg mb-8 opacity-90">Nơi kết nối những tâm hồn đồng điệu, khao khát thấu hiểu bản thân và bứt phá giới hạn. Tham gia cùng Ngân để chia sẻ và học hỏi mỗi ngày.</p>
+            <a href="https://zalo.me/g/community_link" target="_blank" class="inline-block bg-white text-terracotta px-8 py-3 rounded-full font-bold uppercase tracking-wider hover:bg-gray-100 transition shadow-lg">
+                <i class="fas fa-users mr-2"></i> Tham Gia Ngay
+            </a>
+        </div>
+    </section>
+
+    <!-- Phần 5: Tường Lưu Bút & Gửi Lời Nhắn -->
+    <section id="luu-but" class="py-20 md:py-32 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+        <!-- Form Gửi lời nhắn -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Gửi Lời Nhắn Kết Nối</h2>
+            <p class="text-gray-600 mb-8">Bạn có câu chuyện bước ngoặt của riêng mình? Hay chỉ đơn giản là muốn chia sẻ một vài cảm nhận? Đừng ngần ngại để lại lời nhắn, Ngân sẽ nhận được thông báo ngay lập tức.</p>
+            
+            <form id="contactForm" class="space-y-6" onsubmit="submitForm(event)">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Họ và tên của bạn</label>
+                    <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 outline-none transition bg-white" placeholder="VD: Nguyễn Văn A">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Số điện thoại / Zalo (Tùy chọn)</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 outline-none transition bg-white" placeholder="VD: 09xx xxx xxx">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Lời nhắn hoặc Câu chuyện của bạn</label>
+                    <textarea id="message" required rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 outline-none transition bg-white" placeholder="Kể cho Ngân nghe về bước ngoặt của bạn..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-terracotta hover-terracotta text-white font-bold py-4 rounded-lg uppercase tracking-wider transition shadow-md">
+                    Gửi Câu Chuyện Của Bạn
+                </button>
+                <p id="formStatus" class="hidden text-green-600 font-semibold text-center mt-4">Cảm ơn bạn! Lời nhắn đã được gửi thành công đến Ngân.</p>
+            </form>
+        </div>
+
+        <!-- Tường Lưu Bút -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Tường Lưu Bút</h2>
+            <div class="space-y-6 h-[500px] overflow-y-auto pr-4 custom-scrollbar">
+                
+                <div class="bg-[#FDFBF7] p-6 rounded-xl border border-gray-200 shadow-sm relative">
+                    <i class="fas fa-quote-left text-gray-200 text-4xl absolute top-4 right-4"></i>
+                    <p class="text-gray-700 italic mb-4 relative z-10">"Bài viết về sự thấu cảm tuần này rất đúng với những gì mình đang trải qua. Cảm ơn chị Ngân đã truyền động lực để em dám thay đổi cách làm việc của mình!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-terracotta/20 rounded-full flex items-center justify-center text-terracotta font-bold">M</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-gray-800 text-sm">Minh Anh</p>
+                            <p class="text-xs text-gray-500">Học viên - 2 ngày trước</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#FDFBF7] p-6 rounded-xl border border-gray-200 shadow-sm relative">
+                    <i class="fas fa-quote-left text-gray-200 text-4xl absolute top-4 right-4"></i>
+                    <p class="text-gray-700 italic mb-4 relative z-10">"Trang web này ấm áp quá. Câu chuyện 'Dám khác biệt' của bạn thực sự chạm đến mình. Chúc bạn luôn thành công với con đường đang đi nhé."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">H</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-gray-800 text-sm">Hoàng Lê</p>
+                            <p class="text-xs text-gray-500">Đối tác - 1 tuần trước</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4A3F35] text-gray-300 py-12 text-center border-t border-gray-700">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-2xl font-bold text-white mb-4 playfair">Ngân Đỗ</h3>
+            <p class="mb-6 max-w-md mx-auto">Phát triển kinh doanh & Thấu hiểu con người.<br/>Người thiết kế những "bước ngoặt" cuộc đời.</p>
+            <div class="flex justify-center space-x-6 mb-8 text-xl">
+                <a href="https://zalo.me/0902652225" target="_blank" class="hover:text-white transition"><i class="fas fa-comment-dots"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-sm opacity-50">&copy; 2026 Ngân Đỗ. Thiết kế với tinh thần Dám Khác Biệt.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-contact">
+        <a href="tel:0902652225" class="float-btn btn-phone tooltip" title="Gọi ngay: 090 265 2225">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://zalo.me/0902652225" target="_blank" class="float-btn btn-zalo tooltip" title="Nhắn Zalo">
+            <i class="fas fa-comment-dots"></i>
+        </a>
+    </div>
+
+    <div class="floating-share hidden md:flex">
+        <button onclick="shareLink('fb')" class="float-btn btn-fb tooltip" title="Chia sẻ Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </button>
+        <button onclick="shareLink('copy')" class="float-btn btn-link tooltip" title="Copy Link trang">
+            <i class="fas fa-link"></i>
+        </button>
+    </div>
+
+    <script>
+        // Xử lý gửi Form (Webhook giả lập)
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // Thay URL dưới đây bằng Google Apps Script Webhook hoặc Telegram Webhook của bạn
+            const webhookUrl = 'YOUR_WEBHOOK_URL_HERE'; 
+            
+            // Hiển thị thông báo thành công (Giả lập)
+            const btn = event.target.querySelector('button');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
+            
+            setTimeout(() => {
+                document.getElementById('formStatus').classList.remove('hidden');
+                event.target.reset();
+                btn.innerHTML = 'Gửi Câu Chuyện Của Bạn';
+            }, 1000);
+        }
+
+        // Chức năng chia sẻ
+        function shareLink(type) {
+            const url = window.location.href;
+            if (type === 'fb') {
+                window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank');
+            } else if (type === 'copy') {
+                navigator.clipboard.writeText("Mời bạn ghé thăm cuốn nhật ký Bước ngoặt của mình tại đây và để lại lời nhắn cho mình nhé: " + url)
+                    .then(() => alert("Đã sao chép đường link để chia sẻ!"))
+                    .catch(() => alert("Không thể sao chép, vui lòng thử lại."));
+            }
+        }
+    </script>
+    
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #D36B46; }
+    </style>
+</body>
+</html>
